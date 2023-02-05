@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+    background-image: url("./img/a5er.jpg");
+    background-position: center;
+    background-size:cover;
+    
+    
+}
+ .container .quiz {
+    width: 100%;
+    padding-top: 50px;
+    /* height: 65vh; */
+    /* border: 1px solid white; 
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    /* From https://css.glass 
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: sans-serif;*/
+    
+} 
+
+.container .back {
+    width: 30%;
+    height: 60vh;
+    border: 1px solid white;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.quiz h1 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.item {
+    width: 25%;
+    height: 7vh;
+    background-color: aliceblue;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #011b36;
+    transition: 0.5s;
+    /* opacity: 0.6; */
+    
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+.card_end {
+    text-align:end;
+}
+.card .card_start {
+    text-align: start;
+}
+.act {
+    border: 1px solid black;
+    
+}
+
+.back img {
+    margin-left: 100px;
+    animation: 0.5s linear 0s infinite alternate hello;
+    
+}
+@keyframes hello {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+.back p {
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.back span {
+    width: 10%;
+    height: 10px;
+    background-color: blue;
+    margin-left: 160px;
+    border: 1px solid;
+    padding: 10px 30px 10px 30px;
+}
+
+.base-timer {
+    position: absolute;
+    top: 40%;
+    right: 42%;
+    width: 150px;
+    height: 150px;
+    
+    
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(23, 221, 132);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: transparent;
+    background-image: url("./img/manspace.png");
+    background-position: center;
+    background-size: cover;
+    
+  }
+
